@@ -1,3 +1,7 @@
+import { autoinject } from 'aurelia-framework';
+import { ImageStore } from './services/image-store';
+
+@autoinject
 export class App {
-  public message: string = 'Hello World!';
+  constructor(private imageStore: ImageStore) {}
 }
