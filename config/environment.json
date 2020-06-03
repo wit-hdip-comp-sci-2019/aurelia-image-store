@@ -1,4 +1,8 @@
 {
   "debug": true,
-  "testing": true
+  "testing": true,
+  "cloudinary": {
+    "name": "YOUR_CLOUDINARY_NAME",
+    "preset": "YOUR_PRESET"
+  }
 }
