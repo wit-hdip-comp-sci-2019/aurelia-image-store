@@ -24,6 +24,7 @@ export class ImageStore {
 
     try {
       const response = await cloudClient.post('/image/upload', formData);
+      this.images.push({ url: response.content.url, id: response.content.asset_id });
     } catch (err) {
       console.log(err);
     }
